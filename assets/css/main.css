@@ -1,0 +1,7 @@
+.form form{
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    padding: 30px;
+}
