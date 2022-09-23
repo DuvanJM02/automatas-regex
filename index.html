@@ -9,41 +9,49 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <div class="form w-100 h-100 d-flex justify-content-center align-items-center">
-        <form class="rounded" action="">
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <label for="">Nombre</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="my-3">
-                <button class="btn btn-primary">ENVIAR</button>
-            </div>
-        </form>
+    <div class="container">
+         <div class="form w-100 h-100 p-5 d-flex justify-content-center align-items-center">
+            <form class="rounded" action="" autocomplete="off">
+                <div class="row">
+                    <div class="my-3">
+                        <h2>Registro de estudiante <span id="nombre"></span></h2>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="name">Nombre del estudiante</label>
+                        <input type="text" class="form-control" id="name" name="name" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="code">Código de estudiante</label>
+                        <input type="number" class="form-control" id="code" name="code" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="date">Fecha de ingreso</label>
+                        <input type="date" class="form-control" id="date" name="date" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="location">Dirección</label>
+                        <input type="text" class="form-control" id="location" name="location" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="phone">Teléfono fijo</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="cel">Teléfono celular</label>
+                        <input type="tel" class="form-control" id="cel" name="cel" autocomplete="Öcompletes">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="Öcompletes">
+                    </div>
+                    <div class="my-3">
+                        <button class="btn btn-primary">ENVIAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
 </body>
