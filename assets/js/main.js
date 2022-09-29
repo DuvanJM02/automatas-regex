@@ -47,11 +47,11 @@ let em = document.getElementById('email').addEventListener('input', (e)=>{
 
 function validateForm(event, regn, dato){
     console.log(event.target.id)
-    if(arrayInputs() == false){
-        document.getElementById('enviar').setAttribute('disabled', 'true');
-    }else{
-        document.getElementById('enviar').removeAttribute('disabled');
-    }
+    // if(arrayInputs() == false){
+    //     document.getElementById('enviar').setAttribute('disabled', 'true');
+    // }else{
+    //     document.getElementById('enviar').removeAttribute('disabled');
+    // }
     if(regn.test(dato)){
         document.getElementById(event.target.id + '-error').innerHTML = ''; 
         document.getElementById('enviar').removeAttribute('disabled');
@@ -86,20 +86,14 @@ function validateForm(event, regn, dato){
     }
 }
 
-function arrayInputs(){
+window.onload = () =>{
     let inputs = document.querySelectorAll('input');
 
-    for(let i; i <= inputs.length; i++){
-        console.log(inputs);
-        // if(inputs.querySelectorAll('input')[i].value == ''){
-        //     return false;
-        // }else{
-        //     return true;
-        // }
+    for(var i; i <= inputs.length; i++){
+        console.log(inputs[i]);
     }
 }
 
-console.log(arrayInputs());
 
 function saveStudent(e){
     e.preventDefault();
@@ -108,3 +102,5 @@ function saveStudent(e){
 
     return;
 }
+
+Mi perfil es "Hotel Isla del Encanto", cuando se busca Isla del Encanto en Google aparece un resultado llamado "LA ISLA DEL ENCANTO" con ubicación en "Urb. Villa de la Candelaria, Mz. 26, Lote 6, Provincia de Cartagena, Bolívar" el cual causa confusión ya que muchos de nuestros clientes terminan dando sus opiniones allí y no es conveniente, por lo que solicitamos si es posible retirar ese perfil o qué otra forma habría para solucionar este inconveniente.
