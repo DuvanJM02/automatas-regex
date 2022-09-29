@@ -71,7 +71,7 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="d-flex justify-content-center align-items-center">
-                           <form class="rounded" action="" autocomplete="off">
+                           <form id="form" class="rounded" autocomplete="off">
                                <div class="row">
                                    <div class="my-3">
                                        <h2>Registro de estudiante <span id="nombre"></span></h2>
@@ -94,12 +94,12 @@
                                    <div class="col-md-6 my-3">
                                        <label for="location">Dirección</label>
                                        <input type="text" class="form-control" id="location" name="location" autocomplete="Öcompletes">
-                                       <strong class="text-danger" id="loc-error"></strong>
+                                       <strong class="text-danger" id="location-error"></strong>
                                    </div>
                                    <div class="col-md-6 my-3">
                                        <label for="phone">Teléfono fijo</label>
                                        <input type="tel" class="form-control" id="phone" name="phone" autocomplete="Öcompletes">
-                                       <strong class="text-danger" id="tel-error"></strong>
+                                       <strong class="text-danger" id="phone-error"></strong>
                                     </div>
                                    <div class="col-md-6 my-3">
                                        <label for="cel">Teléfono celular</label>
@@ -109,9 +109,10 @@
                                    <div class="col-md-6 my-3">
                                        <label for="email">Correo electrónico</label>
                                        <input type="email" class="form-control" id="email" name="email" autocomplete="Öcompletes">
-                                   </div>
+                                       <strong class="text-danger" id="email-error"></strong>
+                                    </div>
                                    <div class="my-3">
-                                       <button class="btn btn-primary">ENVIAR</button>
+                                       <button type="submit" class="btn btn-primary" id="enviar">ENVIAR</button>
                                    </div>
                                </div>
                            </form>
