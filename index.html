@@ -28,34 +28,20 @@
 
     <div class="container">
         <div class="row">
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped my-5" id="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Código</th>
+                        <th scope="col">Fecha ingreso</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">T. fijo</th>
+                        <th scope="col">T. celular</th>
+                        <th scope="col">Email</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -71,7 +57,7 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="d-flex justify-content-center align-items-center">
-                           <form id="form" action="#" method="post" class="rounded" autocomplete="off">
+                           <form id="form" class="rounded" autocomplete="off">
                                <div class="row">
                                    <div class="my-3">
                                        <h2>Registro de estudiante <span id="nombre"></span></h2>
@@ -88,7 +74,7 @@
                                    </div>
                                    <div class="col-md-6 my-3">
                                        <label for="date">Fecha de ingreso</label>
-                                       <input type="date" class="form-control" id="date" name="date" autocomplete="Öcompletes">
+                                       <input type="text" class="form-control" id="date" name="date" autocomplete="Öcompletes">
                                        <strong class="text-danger" id="date-error"></strong>
                                     </div>
                                    <div class="col-md-6 my-3">
